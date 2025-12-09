@@ -64,18 +64,18 @@ window.addEventListener("scroll", handleNavbarScroll)
 // =============================================
 // Active Navigation Link
 // =============================================
-function setActiveNavLink() {
-  const currentPage = window.location.pathname.split("/").pop() || "index.html"
+// function setActiveNavLink() {
+//   const currentPage = window.location.pathname.split("/").pop() || "index.html"
 
-  navLinks.forEach((link) => {
-    link.classList.remove("active")
-    if (link.getAttribute("href") === currentPage) {
-      link.classList.add("active")
-    }
-  })
-}
+//   navLinks.forEach((link) => {
+//     link.classList.remove("active")
+//     if (link.getAttribute("href") === currentPage) {
+//       link.classList.add("active")
+//     }
+//   })
+// }
 
-setActiveNavLink()
+// setActiveNavLink()
 
 // =============================================
 // Counter Animation with Easing
@@ -582,7 +582,7 @@ function createLoadingScreen() {
       setTimeout(() => {
         loadingScreen.remove()
       }, 500)
-    }, 800)
+    }, 100)
   })
 }
 
