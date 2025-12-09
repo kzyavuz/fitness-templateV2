@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - PowerFit</title>
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/lib/bootstrap/css/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-lightning-charge-fill"></i> POWERFIT
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">İletişim</a>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary ms-lg-3">Üye Ol</a>
+                <!-- <CHANGE> Theme toggle button -->
+                <button class="theme-toggle" aria-label="Tema Değiştir">
+                    <i class="bi bi-sun-fill"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ... existing code ... -->
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1 class="page-title">İletişim</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                    <li class="breadcrumb-item active">İletişim</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <div class="contact-info">
+                        <span class="section-badge">İletişim</span>
+                        <h2 class="section-title">Bizimle <span class="text-gradient">İletişime Geçin</span></h2>
+                        <p class="contact-text">
+                            Sorularınız için bize ulaşın veya ücretsiz deneme antrenmanınızı hemen ayırtın.
+                        </p>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-geo-alt"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h5>Adres</h5>
+                                    <p>Atatürk Cad. No:123<br>Kadıköy, İstanbul</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-telephone"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h5>Telefon</h5>
+                                    <p>+90 212 555 0123<br>+90 532 555 0123</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-envelope"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h5>E-posta</h5>
+                                    <p>info@powerfit.com<br>uyelik@powerfit.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-clock"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <h5>Çalışma Saatleri</h5>
+                                    <p>Hafta içi: 06:00 - 24:00<br>Hafta sonu: 08:00 - 22:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="contact-form-wrapper">
+                        <h3>Üyelik Başvurusu</h3>
+                        <p>Formu doldurun, sizi arayalım</p>
+                        <form id="contactForm" class="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name">Ad Soyad *</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="phone">Telefon *</label>
+                                        <input type="tel" class="form-control" id="phone" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email">E-posta *</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="subject">Konu</label>
+                                        <select class="form-select" id="subject">
+                                            <option value="">Seçiniz</option>
+                                            <option value="uyelik">Üyelik Bilgisi</option>
+                                            <option value="deneme">Ücretsiz Deneme</option>
+                                            <option value="pt">Kişisel Antrenör</option>
+                                            <option value="diger">Diğer</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="message">Mesajınız</label>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="Mesajınızı yazın..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="privacy" required>
+                                        <label class="form-check-label" for="privacy">
+                                            <a href="#">Gizlilik politikasını</a> okudum ve kabul ediyorum.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                                        <i class="bi bi-send me-2"></i>Gönder
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="formSuccess" class="form-success" style="display: none;">
+                            <i class="bi bi-check-circle-fill"></i>
+                            <h4>Teşekkürler!</h4>
+                            <p>Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağız.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container-fluid p-0">
+            <div class="map-wrapper">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.6504900232766!2d29.02516961541!3d40.98868997930156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab8679ed49019%3A0x69d0db0be1ea9ed2!2zS2FkxLFrw7Z5LCDEsHN0YW5idWw!5e0!3m2!1str!2str!4v1635789012345!5m2!1str!2str" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+                <div class="map-overlay-card">
+                    <h4><i class="bi bi-lightning-charge-fill"></i> POWERFIT</h4>
+                    <p>Atatürk Cad. No:123<br>Kadıköy, İstanbul</p>
+                    <a href="https://goo.gl/maps/example" target="_blank" class="btn btn-primary btn-sm">
+                        <i class="bi bi-map me-1"></i> Yol Tarifi Al
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section-padding bg-dark">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">SSS</span>
+                <h2 class="section-title">Sıkça Sorulan <span class="text-gradient">Sorular</span></h2>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Ücretsiz deneme hakkı var mı?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Evet! İlk gelişinizde ücretsiz deneme antrenmanı yapabilirsiniz. Eğitmenlerimiz size salon turunu gösterir ve temel egzersizleri öğretir.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Üyelik iptali nasıl yapılır?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Üyelik iptali için 30 gün önceden yazılı bildirim yapmanız yeterlidir. Resepsiyonumuza gelerek veya e-posta ile başvurabilirsiniz.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Grup derslerine nasıl kayıt olunur?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Mobil uygulamamız veya resepsiyon üzerinden derslere kayıt olabilirsiniz. Premium üyeler tüm derslere sınırsız erişime sahiptir.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Kişisel antrenör hizmeti nasıl alınır?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Kişisel antrenör seansları ayrıca satın alınabilir ve
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <a href="index.html" class="footer-logo">
+                            <i class="bi bi-lightning-charge-fill"></i> POWERFIT
+                        </a>
+                        <p>Sağlıklı yaşam yolculuğunda yanınızdayız. Modern tesisler, uzman kadro ve sınırsız motivasyon.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">Hızlı Linkler</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="gallery.html">Galeri</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-title">Çalışma Saatleri</h5>
+                    <ul class="footer-hours">
+                        <li><span>Pazartesi - Cuma</span> 06:00 - 24:00</li>
+                        <li><span>Cumartesi</span> 08:00 - 22:00</li>
+                        <li><span>Pazar</span> 09:00 - 20:00</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-title">İletişim</h5>
+                    <ul class="footer-contact">
+                        <li><i class="bi bi-geo-alt"></i> Atatürk Cad. No:123, İstanbul</li>
+                        <li><i class="bi bi-telephone"></i> +90 212 555 0123</li>
+                        <li><i class="bi bi-envelope"></i> info@powerfit.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PowerFit. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+</html>

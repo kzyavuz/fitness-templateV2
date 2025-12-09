@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - PowerFit</title>
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/lib/bootstrap/css/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-lightning-charge-fill"></i> POWERFIT
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Hizmetler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">İletişim</a>
+                    </li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary ms-lg-3">Üye Ol</a>
+                <!-- Theme toggle button -->
+                <button class="theme-toggle" aria-label="Tema Değiştir">
+                    <i class="bi bi-sun-fill"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1 class="page-title">Galeri</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
+                    <li class="breadcrumb-item active">Galeri</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">Galeri</span>
+                <h2 class="section-title">Tesislerimizi <span class="text-gradient">Keşfedin</span></h2>
+                <p class="section-subtitle">Modern ekipmanlar ve profesyonel ortamımız</p>
+            </div>
+
+            <!-- Gallery Filter -->
+            <div class="gallery-filter mt-5">
+                <button class="filter-btn active" data-filter="all">Tümü</button>
+                <button class="filter-btn" data-filter="gym">Salon</button>
+                <button class="filter-btn" data-filter="equipment">Ekipman</button>
+                <button class="filter-btn" data-filter="classes">Dersler</button>
+                <button class="filter-btn" data-filter="events">Etkinlikler</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid mt-4">
+                <div class="gallery-item" data-category="gym">
+                    <img src="assets/img/default-image.webp?height=400&width=600" alt="Salon">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Ana Salon</h4>
+                            <p>2000m² antrenman alanı</p>
+                        </div>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="equipment">
+                    <img src="assets/img/default-image.webp?height=400&width=600" alt="Dambıllar">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Serbest Ağırlık</h4>
+                            <p>Profesyonel dambıl seti</p>
+                        </div>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="classes">
+                    <img src="assets/img/default-image.webp?height=400&width=600" alt="Yoga Dersi">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Yoga Stüdyosu</h4>
+                            <p>Huzurlu ortamda dersler</p>
+                        </div>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item large" data-category="gym">
+                    <img src="assets/img/default-image.webp?height=500&width=800" alt="Kardiyo Alanı">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Kardiyo Alanı</h4>
+                            <p>Son model koşu bantları</p>
+                        </div>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="equipment">
+                    <img src="assets/img/default-image.webp?height=400&width=600" alt="Kablo Makinesi">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Kablo İstasyonu</h4>
+                            <p>Çok fonksiyonlu makine</p>
+                        </div>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="classes">
+                    <img src="assets/img/default-image.webp?height=400&width=600" alt="Spinning">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Spinning Salonu</h4>
+                            <p>Enerjik grup dersleri</p>
+                        </div>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="assets/img/default-image.webp?height=400&width=600" alt="Etkinlik">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Fitness Yarışması</h4>
+                            <p>Yıllık etkinlik</p>
+                        </div>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="gym">
+                    <img src="assets/img/default-image.webp?height=400&width=600" alt="Soyunma Odası">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Soyunma Odası</h4>
+                            <p>Lüks ve hijyenik</p>
+                        </div>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item large" data-category="equipment">
+                    <img src="assets/img/default-image.webp?height=500&width=800" alt="Bacak Presi">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Bacak Presi</h4>
+                            <p>Profesyonel ekipman</p>
+                        </div>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="assets/img/default-image.webp?height=400&width=600" alt="Açılış">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Açılış Etkinliği</h4>
+                            <p>Yeni şubemiz</p>
+                        </div>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="gym">
+                    <img src="assets/img/default-image.webp?height=400&width=600" alt="Sauna">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>Sauna</h4>
+                            <p>Rahatlama alanı</p>
+                        </div>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="classes">
+                    <img src="assets/img/default-image.webp?height=400&width=600" alt="CrossFit">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h4>CrossFit Alanı</h4>
+                            <p>Fonksiyonel antrenman</p>
+                        </div>
+                        <button class="gallery-zoom" data-bs-toggle="modal" data-bs-target="#galleryModal">
+                            <i class="bi bi-arrows-fullscreen"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section section-padding bg-dark">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="section-badge">Video Tur</span>
+                    <h2 class="section-title">Tesisimizi <span class="text-gradient">Sanal Gezin</span></h2>
+                    <p class="video-text">
+                        Modern ekipmanlarımız, profesyonel eğitmenlerimiz ve motivasyon dolu ortamımızı 
+                        keşfedin. Her köşede sizi bekleyen yenilikler var.
+                    </p>
+                    <ul class="video-features">
+                        <li><i class="bi bi-check-circle-fill"></i> 2000m² kapalı alan</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 50+ modern ekipman</li>
+                        <li><i class="bi bi-check-circle-fill"></i> 3 ayrı stüdyo</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Sauna & buhar odası</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="video-wrapper">
+                        <img src="assets/img/default-image.webp?height=400&width=600" alt="Video">
+                        <button class="video-play-btn" id="playVideoBtn">
+                            <i class="bi bi-play-fill"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-dark">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="assets/img/default-image.webp?height=600&width=900" alt="Gallery" class="img-fluid" id="modalImage">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <a href="index.html" class="footer-logo">
+                            <i class="bi bi-lightning-charge-fill"></i> POWERFIT
+                        </a>
+                        <p>Sağlıklı yaşam yolculuğunda yanınızdayız. Modern tesisler, uzman kadro ve sınırsız motivasyon.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-title">Hızlı Linkler</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="about.html">Hakkımızda</a></li>
+                        <li><a href="services.html">Hizmetler</a></li>
+                        <li><a href="gallery.html">Galeri</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-title">Çalışma Saatleri</h5>
+                    <ul class="footer-hours">
+                        <li><span>Pazartesi - Cuma</span> 06:00 - 24:00</li>
+                        <li><span>Cumartesi</span> 08:00 - 22:00</li>
+                        <li><span>Pazar</span> 09:00 - 20:00</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="footer-title">İletişim</h5>
+                    <ul class="footer-contact">
+                        <li><i class="bi bi-geo-alt"></i> Atatürk Cad. No:123, İstanbul</li>
+                        <li><i class="bi bi-telephone"></i> +90 212 555 0123</li>
+                        <li><i class="bi bi-envelope"></i> info@powerfit.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PowerFit. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+</html>
